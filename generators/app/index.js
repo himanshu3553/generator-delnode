@@ -42,43 +42,43 @@ const serverGenerator = class extends Generator {
     }
 
 
-    writing() {
-        this.fs.copyTpl(
-            this.templatePath('config.js'),
-            this.destinationPath('config.js'), {
-                serverName: this.serverName
-            }
-        )
+    // writing() {
+    //     this.fs.copyTpl(
+    //         this.templatePath('config.js'),
+    //         this.destinationPath('config.js'), {
+    //             serverName: this.serverName
+    //         }
+    //     )
 
-        this.fs.copy(
-            this.templatePath('index.js'),
-            this.destinationPath('index.js')
-        )
+    //     this.fs.copy(
+    //         this.templatePath('index.js'),
+    //         this.destinationPath('index.js')
+    //     )
 
-        this.fs.copy(
-            this.templatePath('gitignore'),
-            this.destinationPath('.gitignore')
-        )
+    //     this.fs.copy(
+    //         this.templatePath('gitignore'),
+    //         this.destinationPath('.gitignore')
+    //     )
 
-        this.fs.copyTpl(
-            this.templatePath('package.json'),
-            this.destinationPath('package.json'), {
-                serverName: this.serverName,
-                serverDescription: this.serverDescription,
-                serverVersion: this.serverVersion,
-                authorName: this.authorName,
-                authorEmail: this.authorEmail
-            }
-        )
+    //     this.fs.copyTpl(
+    //         this.templatePath('package.json'),
+    //         this.destinationPath('package.json'), {
+    //             serverName: this.serverName,
+    //             serverDescription: this.serverDescription,
+    //             serverVersion: this.serverVersion,
+    //             authorName: this.authorName,
+    //             authorEmail: this.authorEmail
+    //         }
+    //     )
 
-        this.fs.copyTpl(
-            this.templatePath('README.template.md'),
-            this.destinationPath('README.md'), {
-                serverName: this.serverName,
-                serverDescription: this.serverDescription
-            }
-        )
-    }
+    //     this.fs.copyTpl(
+    //         this.templatePath('README.template.md'),
+    //         this.destinationPath('README.md'), {
+    //             serverName: this.serverName,
+    //             serverDescription: this.serverDescription
+    //         }
+    //     )
+    // }
 
     install() {
         this.installDependencies({
