@@ -1,0 +1,22 @@
+{
+  "name": "generator-delnode",
+  "version": "1.0.0",
+  "description": "Yeoman generator for creating RESTful NodeJS APIs, using ES6, PostgreSQL and Express",
+  "files": [
+    "generators"
+  ],
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "to-case": "^2.0.0",
+    "yeoman-generator": "^4.0.1",
+    "yosay": "^2.0.2"
+  }
+}
